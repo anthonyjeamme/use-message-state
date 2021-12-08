@@ -1,7 +1,7 @@
 {
-  "name": "use-message-state",
+  "name": "@ajeamme/use-message-state",
   "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "description": "A React useState that synchronizes each instance (on same canal) through messages.",
   "author": "anthonyjeamme",
   "license": "MIT",
   "repository": "ajeamme/use-message-state",

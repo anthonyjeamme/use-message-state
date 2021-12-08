@@ -1,30 +1,15 @@
-# use-message-state
+# Why ?
 
-> Made with create-react-library
+I made this library to helps when creating React application embedded in non-React pages.
 
-[![NPM](https://img.shields.io/npm/v/use-message-state.svg)](https://www.npmjs.com/package/use-message-state) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+Some state needs to be connected when we are not able to create a global context.
 
-## Install
+# How to use
 
-```bash
-npm install --save use-message-state
-```
-
-## Usage
+Just use it like useState :
 
 ```tsx
-import React, { Component } from 'react'
-
-import MyComponent from 'use-message-state'
-import 'use-message-state/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+const [firstname] = useMessageState('firstname', 'joe')
 ```
 
-## License
-
-MIT © [anthonyjeamme](https://github.com/anthonyjeamme)
+First argument is canal name, second one is default state value.
